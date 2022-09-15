@@ -8,7 +8,7 @@ ts = time.time()
 
 path_to_videos = 'videos'
 
-vid_names = np.sort(os.listdir(path_to_videos))
+vid_names = ['GX010150.MP4']
 output_base_name = os.path.splitext(vid_names[0])[0]
 
 ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut1.MP4', 2, 520)
