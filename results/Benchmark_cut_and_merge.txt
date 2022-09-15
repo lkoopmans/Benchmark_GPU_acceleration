@@ -1,0 +1,4 @@
+First cut: 1.268s
+Second cut: 2.517s
+Third cut: 4.0s
+Merged: 3.77s

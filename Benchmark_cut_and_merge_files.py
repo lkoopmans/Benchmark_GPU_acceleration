@@ -11,13 +11,13 @@ path_to_videos = 'videos'
 vid_names = np.sort(os.listdir(path_to_videos))
 output_base_name = os.path.splitext(vid_names[0])[0]
 
-ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut1.MP4', 2, 3)
+ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut1.MP4', 2, 520)
 t1 = time.time()-ts
 
-ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut2.MP4', 2, 3)
+ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut2.MP4', 2, 520)
 t2 = time.time()-ts
 
-ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut3.MP4', 2, 3)
+ip.cut_video(path_to_videos + '/' + vid_names[0], path_to_videos + '/' + output_base_name + '_cut3.MP4', 2, 520)
 t3 = time.time()-ts
 
 filenames = np.sort(os.listdir(path_to_videos))
@@ -33,7 +33,7 @@ subprocess.run('ffmpeg -loglevel error -f concat -safe 0 -i merge_list.txt -c:v 
 
 t4 = time.time()-ts
 
-with open('results/Benchmark_cut_and_merge.txt', 'w') as f:
+with open('results/Benchmark_cut_and_merge_GPU.txt', 'w') as f:
     f.write('First cut: ' + str(np.round(t1, 3))+'s')
     f.write('\n')
     f.write('Second cut: ' + str(np.round(t2, 3))+'s')
