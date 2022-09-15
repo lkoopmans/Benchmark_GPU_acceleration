@@ -5,10 +5,6 @@ import subprocess
 
 ts = time.time()
 
-path_to_videos = 'videos'
-
-vid_names = ['GX010150.MP4']
-
 subprocess.run('ffmpeg -i videos/GX010150.MP4 -vcodec libx264 -crf 20 -preset ultrafast videos/output1.MP4', shell=True)
 t1 = time.time() - ts
 
