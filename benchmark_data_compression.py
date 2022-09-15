@@ -39,11 +39,11 @@ with open('results/Benchmark_data_compression_GPU.txt', 'w') as f:
     f.write('h.265 preset medium: ' + str(np.round(t6, 3))+'s')
     f.write('\n')
 
-os.remove('videos/output1.MP4')
+'''os.remove('videos/output1.MP4')
 os.remove('videos/output2.MP4')
 os.remove('videos/output3.MP4')
 os.remove('videos/output4.MP4')
 os.remove('videos/output5.MP4')
-os.remove('videos/output6.MP4')
+os.remove('videos/output6.MP4')'''
 
 
