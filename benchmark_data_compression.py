@@ -40,12 +40,12 @@ with open('results/Benchmark_data_compression_GPU.txt', 'w') as f:
     f.write('\n')
 
 
-os.remove('videos/output1.MP4')
-os.remove('videos/output2.MP4')
-os.remove('videos/output3.MP4')
-os.remove('videos/output4.MP4')
-os.remove('videos/output5.MP4')
-os.remove('videos/output6.MP4')
+os.remove('videos/264_ultra.MP4')
+os.remove('videos/264_very.MP4')
+os.remove('videos/264_medium.MP4')
+os.remove('videos/264_slower.MP4')
+os.remove('videos/265_ultrafast.MP4')
+os.remove('videos/265_medium.MP4')
 
 
 
