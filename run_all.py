@@ -1,5 +1,9 @@
 import subprocess
 
+# Run requirements
+subprocess.run('pip install -r requirements.txt', shell=True)
+
+# Run benchmark tests
 subprocess.run('python benchmark_cut_and_merge_files.py', shell=True)
 subprocess.run('python benchmark_data_compression.py', shell=True)
 subprocess.run('python benchmark_image_extraction.py', shell=True)

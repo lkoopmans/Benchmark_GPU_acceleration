@@ -1,0 +1,6 @@
+h.264 preset ultrafast: 382.42s
+h.264 preset veryfast: 481.338s
+h.264 preset medium: 1213.0s
+h.264 preset slower: 2651.0s
+h.265 preset ultrafast: 2566.818s
+h.265 preset medium: 8317.577s

@@ -36,11 +36,11 @@ t4 = time.time()-ts
 with open('results/Benchmark_cut_and_merge_GPU.txt', 'w') as f:
     f.write('First cut: ' + str(np.round(t1, 3))+'s')
     f.write('\n')
-    f.write('Second cut: ' + str(np.round(t2, 3))+'s')
+    f.write('Second cut: ' + str(np.round(t2-t1, 3))+'s')
     f.write('\n')
-    f.write('Third cut: ' + str(np.round(t3, ))+'s')
+    f.write('Third cut: ' + str(np.round(t3-t2, ))+'s')
     f.write('\n')
-    f.write('Merged: ' + str(np.round(t4, 3))+'s')
+    f.write('Merged: ' + str(np.round(t4-t3, 3))+'s')
     f.write('\n')
 
 os.remove('merge_list.txt')
