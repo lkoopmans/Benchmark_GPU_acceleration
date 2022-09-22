@@ -31,6 +31,6 @@
 
 |                  | CPU (s) | GPU (s) |
 |:-----------------|:-------:|:-------:|
-| image extraction |   602   |    -    |
+| image extraction & object detection|   602   |    -    |
 
 
